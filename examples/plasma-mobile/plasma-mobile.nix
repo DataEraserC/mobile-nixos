@@ -31,7 +31,7 @@
 
     libinput.enable = true;
   };
-
+  system.stateVersion = "24.05";
   hardware.bluetooth.enable = true;
   hardware.pulseaudio.enable = lib.mkDefault true; # mkDefault to help out users wanting pipewire
   networking.networkmanager.enable = true;
