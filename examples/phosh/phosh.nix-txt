@@ -43,6 +43,10 @@
   networking.networkmanager.enable = true;
   networking.wireless.enable = false;
   powerManagement.enable = true;
+  systemd.tmpfiles.rules =
+  [
+    "d /etc/pulse/default.pa.d 0444 root root"
+  ] ;
 
   assertions = [
     { assertion = options.services.xserver.desktopManager.phosh.user.isDefined;
