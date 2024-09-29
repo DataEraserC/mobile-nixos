@@ -36,6 +36,7 @@ in
       users.users.root.password  = "nixos";
       mobile.quirks.qualcomm.sdm845-modem.enable = true;
       system.stateVersion = "24.05";
+      nix.settings.experimental-features = [ "nix-command" "flakes" ];
       # Automatically login as defaultUserName.
       services.xserver.displayManager.autoLogin = {
         user = defaultUserName;
