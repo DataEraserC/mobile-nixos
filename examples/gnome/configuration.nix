@@ -9,6 +9,10 @@ in
 {
   imports = [
     ./gnome.nix
+    #./buffyboard.nix
+    #./hkdm.nix
+    #./ttyescape.nix
+    #./Cargo.lock
   ];
 
   config = lib.mkMerge [
@@ -39,9 +43,6 @@ in
       nix.settings.experimental-features = [ "nix-command" "flakes" ];
       # Automatically login as defaultUserName.
       services.displayManager.autoLogin = {
-        user = defaultUserName;
-      };
-      services.desktopManager.gnome = {
         user = defaultUserName;
       };
     }
