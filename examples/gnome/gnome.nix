@@ -1,5 +1,5 @@
 #
-# This file represents safe opinionated defaults for a basic Phosh system.
+# This file represents safe opinionated defaults for a basic phosh system.
 #
 # NOTE: this file and any it imports **have** to be safe to import from
 #       an end-user's config.
@@ -12,9 +12,9 @@
     splash = lib.mkDefault true;
   };
 
-  services.enable = true;
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+  services.xserver.enable = true;
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
 
   programs.calls.enable = true;
 
@@ -24,14 +24,13 @@
     git
     wget
     mpv
+    yt-dlp
     podman
     nmon
     htop
     cmus
     fastfetch
     go-musicfox
-    neofetch
-    gnome-shell
     gnome-console # Terminal
   ];
 
@@ -39,7 +38,7 @@
   #sound.enable = true;
   #nixpkgs.config.pulseaudio = true;
   hardware.bluetooth.enable = true;
-  hardware.pulseaudio.enable = lib.mkDefault true; # mkDefault to help out users wanting pipewire
+  hardware.pulseaudio.enable = lib.mkForce false; # mkDefault to help out users wanting pipewire
   networking.networkmanager.enable = true;
   networking.wireless.enable = false;
   powerManagement.enable = true;
@@ -53,7 +52,6 @@
 security.rtkit.enable = true;
 services.pipewire = {
   enable = true;
-  alsa.store = false;
   alsa.enable = true;
   alsa.support32Bit = true;
   pulse.enable = true;
@@ -62,3 +60,4 @@ services.pipewire = {
 };
 
 }
+
