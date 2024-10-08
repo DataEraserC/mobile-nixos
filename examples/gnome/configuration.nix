@@ -34,8 +34,8 @@ in
       };
 
       users.users.root.password  = "nixos";
-      mobile.quirks.qualcomm.sdm845-modem.enable = true;
-      system.stateVersion = "24.05";
+      # mobile.quirks.qualcomm.sdm845-modem.enable = true;
+      system.stateVersion = "24.11";
       nix.settings.experimental-features = [ "nix-command" "flakes" ];
       # Automatically login as defaultUserName.
       services.displayManager.autoLogin = {
