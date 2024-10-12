@@ -3,7 +3,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-22_11.url = "github:NixOS/nixpkgs/nixos-22.11";
-    flake-parts.url = "github:gmicroul/mobile-nixos";
+    flake-parts.url = "github:gmicroul/mobile-nixos/example/gnome";
 
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
