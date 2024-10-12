@@ -2,8 +2,8 @@
   description = "My personal NUR repository";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs-22_11.url = "github:NixOS/nixpkgs/nixos-22.11";
-    flake-parts.url = "github:gmicroul/mobile-nixos/example/gnome";
+    nixpkgs-24_05.url = "github:NixOS/nixpkgs/nixos-24.05";
+    flake-parts.url = "github:hercules-ci/flake-parts";
 
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
@@ -44,9 +44,9 @@
           nixpkgs-options = ./flake-modules/nixpkgs-options.nix;
         };
 
-        pkgsForSystem-22_11 =
+        pkgsForSystem-24_05 =
           system:
-          import inputs.nixpkgs-22_11 {
+          import inputs.nixpkgs-24_05 {
             inherit system;
             config = {
               inherit (config.nixpkgs-options) allowUnfree;
@@ -79,13 +79,13 @@
                 final: prev:
                 import ./pkgs null {
                   pkgs = prev;
-                  pkgs-22_11 = pkgsForSystem-22_11 final.system;
+                  pkgs-24_05 = pkgsForSystem-24_05 final.system;
                   inherit inputs;
                 };
               inSubTree = final: prev: {
                 nur-xddxdd = import ./pkgs null {
                   pkgs = prev;
-                  pkgs-22_11 = pkgsForSystem-22_11 final.system;
+                  pkgs-24_05 = pkgsForSystem-24_05 final.system;
                   inherit inputs;
                 };
               };
@@ -136,13 +136,13 @@
             packages =
               import ./pkgs null {
                 inherit inputs pkgs;
-                pkgs-22_11 = pkgsForSystem-22_11 system;
+                pkgs-24_05 = pkgsForSystem-24_05 system;
               }
               // ptr;
             legacyPackages =
               import ./pkgs "legacy" {
                 inherit inputs pkgs;
-                pkgs-22_11 = pkgsForSystem-22_11 system;
+                pkgs-24_05 = pkgsForSystem-24_05 system;
               }
               // ptr;
           };
