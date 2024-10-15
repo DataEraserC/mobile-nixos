@@ -6,6 +6,7 @@ in
 {
   imports = [
     ./phosh.nix
+    ./bluetooth.nix
     ../common-configuration.nix
   ];
 
