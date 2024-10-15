@@ -9,6 +9,8 @@ in
 {
   imports = [
     ./phosh.nix
+    ./bluetooth.nix
+    ../common-configuration.nix
   ];
 
   config = lib.mkMerge [
