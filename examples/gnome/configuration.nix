@@ -9,6 +9,7 @@ in
 {
   imports = [
     ./gnome.nix
+    ../common-configuration.nix
     #./buffyboard.nix
     #./hkdm.nix
     #./ttyescape.nix
