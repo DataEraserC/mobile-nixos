@@ -1,0 +1,205 @@
+../sound/soc/codecs/tas2559.c:584:5: warning: no previous prototype for 'tas2559_set_DAC_gain' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  584 | int tas2559_set_DAC_gain(struct tas2559_priv *pTAS2559,
+      |     ^~~~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tas2559.c:609:5: warning: no previous prototype for 'tas2559_get_DAC_gain' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  609 | int tas2559_get_DAC_gain(struct tas2559_priv *pTAS2559,
+      |     ^~~~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tas2559.c:631:5: warning: no previous prototype for 'tas2559_DevMute' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  631 | int tas2559_DevMute(struct tas2559_priv *pTAS2559, enum channel dev, bool mute)
+      |     ^~~~~~~~~~~~~~~
+../sound/soc/codecs/tas2559.c:645:5: warning: no previous prototype for 'tas2559_load_default' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  645 | int tas2559_load_default(struct tas2559_priv *pTAS2559)
+      |     ^~~~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tas2559.c:682:6: warning: no previous prototype for 'tas2559_clear_firmware' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  682 | void tas2559_clear_firmware(struct TFirmware *pFirmware)
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tas2559.c:1111:5: warning: no previous prototype for 'tas2559_set_program' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1111 | int tas2559_set_program(struct tas2559_priv *pTAS2559,
+      |     ^~~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tas2559.c:1623:6: warning: no previous prototype for 'tas2559_fw_ready' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1623 | void tas2559_fw_ready(const struct firmware *pFW, void *pContext)
+      |      ^~~~~~~~~~~~~~~~
+  CC      lib/hweight.o
+../sound/soc/codecs/tas2559.c:1680:5: warning: no previous prototype for 'tas2559_enable' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1680 | int tas2559_enable(struct tas2559_priv *pTAS2559, bool bEnable)
+      |     ^~~~~~~~~~~~~~
+../sound/soc/codecs/tas2559.c:1770:5: warning: no previous prototype for 'tas2559_set_sampling_rate' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1770 | int tas2559_set_sampling_rate(struct tas2559_priv *pTAS2559, unsigned int nSamplingRate)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tas2559.c:1819:5: warning: no previous prototype for 'tas2559_set_config' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1819 | int tas2559_set_config(struct tas2559_priv *pTAS2559, int config)
+      |     ^~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tas2559.c:1861:5: warning: no previous prototype for 'tas2559_parse_dt' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1861 | int tas2559_parse_dt(struct device *dev, struct tas2559_priv *pTAS2559)
+      |     ^~~~~~~~~~~~~~~~
+../sound/soc/codecs/tas2559.c:2141:5: warning: no previous prototype for 'tas2559_register_codec' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 2141 | int tas2559_register_codec(struct tas2559_priv *pTAS2559)
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tas2559.c:2152:5: warning: no previous prototype for 'tas2559_deregister_codec' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 2152 | int tas2559_deregister_codec(struct tas2559_priv *pTAS2559)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+
+
+../sound/soc/codecs/tfa98xx-downstream/tfa98xx.c: In function 'tfa98xx_write_register16':
+../sound/soc/codecs/tfa98xx-downstream/tfa98xx.c:1757:50: warning: suggest braces around empty body in an 'if' statement [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wempty-body-Wempty-body8;;]
+ 1757 |                         ret < 0 ? "Error!!" : "");
+      |                                                  ^
+../sound/soc/codecs/tfa98xx-downstream/tfa98xx.c: In function 'tfa98xx_read_register16':
+../sound/soc/codecs/tfa98xx-downstream/tfa98xx.c:1801:50: warning: suggest braces around empty body in an 'if' statement [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wempty-body-Wempty-body8;;]
+ 1801 |                         ret < 0 ? "Error!!" : "");
+      |                                                  ^
+../sound/soc/codecs/tfa98xx-downstream/tfa98xx.c: In function 'tfa98xx_read_data':
+../sound/soc/codecs/tfa98xx-downstream/tfa98xx.c:1906:42: warning: suggest braces around empty body in an 'if' statement [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wempty-body-Wempty-body8;;]
+ 1906 |                                 reg, len);
+      |                                          ^
+../sound/soc/codecs/tfa98xx-downstream/tfa98xx.c: In function 'tfa98xx_write_raw':
+../sound/soc/codecs/tfa98xx-downstream/tfa98xx.c:1948:73: warning: suggest braces around empty body in an 'if' statement [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wempty-body-Wempty-body8;;]
+ 1948 |                         tfa98xx_trace_printk("\t\tWR-RAW len=%d\n", len);
+      |                                                                         ^
+
+../sound/soc/codecs/tfa98xx-downstream/tfa_container.c: In function 'tfaContWriteFilesVstep':
+../sound/soc/codecs/tfa98xx-downstream/tfa_container.c:1971:89: warning: suggest braces around empty body in an 'if' statement [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wempty-body-Wempty-body8;;]
+ 1971 |                         tfaContProfileName(tfa->cnt, tfa->dev_idx, prof_idx), vstep_idx);
+      |                                                                                         ^
+
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:90:5: warning: conflicting types for 'tfa_irq_clear' due to enum/integer mismatch; have 'int(struct tfa_device *, enum tfa9912_irq)' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-int-mismatch-Wenum-int-mismatch8;;]
+   90 | int tfa_irq_clear(struct tfa_device *tfa, enum tfa9912_irq bit)
+      |     ^~~~~~~~~~~~~
+In file included from ../sound/soc/codecs/tfa98xx-downstream/tfa_service.h:39,
+                 from ../sound/soc/codecs/tfa98xx-downstream/tfa98xx_parameters.h:31,
+                 from ../sound/soc/codecs/tfa98xx-downstream/tfa_container.h:26,
+                 from ../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:13:
+../sound/soc/codecs/tfa98xx-downstream/tfa_device.h:289:5: note: previous declaration of 'tfa_irq_clear' with type 'int(struct tfa_device *, int)'
+  289 | int tfa_irq_clear(struct tfa_device *tfa, int bit);
+      |     ^~~~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:112:5: warning: conflicting types for 'tfa_irq_get' due to enum/integer mismatch; have 'int(struct tfa_device *, enum tfa9912_irq)' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-int-mismatch-Wenum-int-mismatch8;;]
+  112 | int tfa_irq_get(struct tfa_device *tfa, enum tfa9912_irq bit)
+      |     ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_device.h:293:5: note: previous declaration of 'tfa_irq_get' with type 'int(struct tfa_device *, int)'
+  293 | int tfa_irq_get(struct tfa_device *tfa, int bit);
+      |     ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:132:5: warning: conflicting types for 'tfa_irq_ena' due to enum/integer mismatch; have 'int(struct tfa_device *, enum tfa9912_irq,  int)' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-int-mismatch-Wenum-int-mismatch8;;]
+  132 | int tfa_irq_ena(struct tfa_device *tfa, enum tfa9912_irq bit, int state)
+      |     ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_device.h:297:5: note: previous declaration of 'tfa_irq_ena' with type 'int(struct tfa_device *, int,  int)'
+  297 | int tfa_irq_ena(struct tfa_device *tfa, int bit, int state);
+      |     ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:196:5: warning: conflicting types for 'tfa_irq_set_pol' due to enum/integer mismatch; have 'int(struct tfa_device *, enum tfa9912_irq,  int)' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-int-mismatch-Wenum-int-mismatch8;;]
+  196 | int tfa_irq_set_pol(struct tfa_device *tfa, enum tfa9912_irq bit, int state)
+      |     ^~~~~~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_device.h:301:5: note: previous declaration of 'tfa_irq_set_pol' with type 'int(struct tfa_device *, int,  int)'
+  301 | int tfa_irq_set_pol(struct tfa_device *tfa, int bit, int state);
+      |     ^~~~~~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:600:20: warning: no previous prototype for 'tfa98xx_faim_protect' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  600 | enum Tfa98xx_Error tfa98xx_faim_protect(struct tfa_device *tfa, int state)
+      |                    ^~~~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:649:20: warning: no previous prototype for 'tfa98xx_set_osc_powerdown' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  649 | enum Tfa98xx_Error tfa98xx_set_osc_powerdown(struct tfa_device *tfa, int state)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:665:20: warning: no previous prototype for 'tfa98xx_update_lpm' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  665 | enum Tfa98xx_Error tfa98xx_update_lpm(struct tfa_device *tfa, int state)
+      |                    ^~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:679:5: warning: no previous prototype for 'tfa98xx_powerswitch_is_enabled' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  679 | int tfa98xx_powerswitch_is_enabled(struct tfa_device *tfa)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:815:6: warning: no previous prototype for 'tfa2_manual_mtp_cpy' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  815 | void tfa2_manual_mtp_cpy(struct tfa_device *tfa, uint16_t reg_row_to_keep, uint16_t reg_row_to_set, uint8_t row)///MCH_TO_TEST
+      |      ^~~~~~~~~~~~~~~~~~~
+  CC      fs/squashfs/decompressor.o
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c: In function 'tfa_dev_start':
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:3265:21: warning: implicit conversion from 'enum tfa_error' to 'enum Tfa98xx_Error' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-conversion-Wenum-conversion8;;]
+ 3265 |                 err = tfa_dev_stop(tfa);
+      |                     ^
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:3294:16: warning: implicit conversion from 'enum Tfa98xx_Error' to 'enum tfa_error' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-conversion-Wenum-conversion8;;]
+ 3294 |         return err;
+      |                ^~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c: In function 'tfa_dev_stop':
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:3310:24: warning: implicit conversion from 'enum Tfa98xx_Error' to 'enum tfa_error' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-conversion-Wenum-conversion8;;]
+ 3310 |                 return err;
+      |                        ^~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:3315:16: warning: implicit conversion from 'enum Tfa98xx_Error' to 'enum tfa_error' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-conversion-Wenum-conversion8;;]
+ 3315 |         return err;
+      |                ^~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c: In function 'tfa_dev_set_state':
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:3877:29: warning: implicit conversion from 'enum Tfa98xx_Error' to 'enum tfa_error' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-conversion-Wenum-conversion8;;]
+ 3877 |                         err = tfa98xx_dsp_system_stable(tfa, &ready);
+      |                             ^
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:3886:29: warning: implicit conversion from 'enum Tfa98xx_Error' to 'enum tfa_error' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-conversion-Wenum-conversion8;;]
+ 3886 |                         err = tfa98xx_faim_protect(tfa, 1);
+      |                             ^
+  CC      lib/zstd/compress/zstd_compress.o
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:3916:29: warning: implicit conversion from 'enum Tfa98xx_Error' to 'enum tfa_error' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-conversion-Wenum-conversion8;;]
+ 3916 |                         err = tfa98xx_faim_protect(tfa, 0);
+      |                             ^
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c: In function 'tfa_dev_mtp_set':
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:4046:21: warning: implicit conversion from 'enum Tfa98xx_Error' to 'enum tfa_error' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-conversion-Wenum-conversion8;;]
+ 4046 |                 err = tfa98xx_set_mtp(tfa, (uint16_t)value, TFA98XX_KEY2_PROTECTED_MTP0_MTPOTC_MSK);
+      |                     ^
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:4049:21: warning: implicit conversion from 'enum Tfa98xx_Error' to 'enum tfa_error' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-conversion-Wenum-conversion8;;]
+ 4049 |                 err = tfa98xx_set_mtp(tfa, (uint16_t)value, TFA98XX_KEY2_PROTECTED_MTP0_MTPEX_MSK);
+      |                     ^
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c: In function 'tfa_plop_noise_interrupt':
+../sound/soc/codecs/tfa98xx-downstream/tfa_dsp.c:4306:29: warning: implicit conversion from 'enum tfa_error' to 'enum Tfa98xx_Error' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wenum-conversion-Wenum-conversion8;;]
+ 4306 |                         err = tfa_dev_start(tfa, profile, vstep);
+      |                             ^
+
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:109:5: warning: no previous prototype for 'tfa_set_swprofile' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  109 | int tfa_set_swprofile(struct tfa_device *tfa, unsigned short new_value)
+      |     ^~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:184:6: warning: no previous prototype for 'tfa_set_ops_defaults' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  184 | void tfa_set_ops_defaults(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:260:6: warning: no previous prototype for 'tfanone_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  260 | void tfanone_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:486:20: warning: no previous prototype for 'tfa9912_reg_write' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  486 | enum Tfa98xx_Error tfa9912_reg_write(struct tfa_device *tfa, unsigned char subaddress, unsigned short value)
+      |                    ^~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:530:6: warning: no previous prototype for 'tfa9912_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  530 | void tfa9912_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:671:6: warning: no previous prototype for 'tfa9872_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  671 | void tfa9872_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:815:6: warning: no previous prototype for 'tfa9873_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  815 | void tfa9873_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:983:6: warning: no previous prototype for 'tfa9874_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+  983 | void tfa9874_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:1081:20: warning: no previous prototype for 'tfa9875_tfa_status' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1081 | enum Tfa98xx_Error tfa9875_tfa_status(struct tfa_device* tfa)
+      |                    ^~~~~~~~~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:1185:6: warning: no previous prototype for 'tfa9875_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1185 | void tfa9875_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:1330:6: warning: no previous prototype for 'tfa9878_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1330 | void tfa9878_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:1511:6: warning: no previous prototype for 'tfa9888_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1511 | void tfa9888_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:1649:6: warning: no previous prototype for 'tfa9896_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1649 | void tfa9896_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:1746:6: warning: no previous prototype for 'tfa9897_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1746 | void tfa9897_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:1785:6: warning: no previous prototype for 'tfa9895_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1785 | void tfa9895_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:1816:6: warning: no previous prototype for 'tfa9891_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1816 | void tfa9891_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:1967:6: warning: no previous prototype for 'tfa9890_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 1967 | void tfa9890_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+../sound/soc/codecs/tfa98xx-downstream/tfa_init.c:2132:6: warning: no previous prototype for 'tfa9894_ops' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-prototypes-Wmissing-prototypes8;;]
+ 2132 | void tfa9894_ops(struct tfa_device_ops *ops)
+      |      ^~~~~~~~~~~
+
+../drivers/gpu/drm/panel/panel-novatek-nt36672a.c: In function 'nt36672a_panel_unprepare':
+../drivers/gpu/drm/panel/panel-novatek-nt36672a.c:146:32: warning: unused variable 'pinfo' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable8;;]
+  146 |         struct nt36672a_panel *pinfo = to_nt36672a_panel(panel);
+      |                                ^~~~~
+
