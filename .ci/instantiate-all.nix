@@ -75,7 +75,8 @@ let
     (dig "overlay.aarch64-linux.aarch64-linux") //
     (dig "overlay.x86_64-linux.aarch64-linux-cross") //
     (dig "overlay.x86_64-linux.armv7l-linux-cross") //
-    (dig "overlay.x86_64-linux.x86_64-linux")
+    (dig "overlay.x86_64-linux.x86_64-linux") //
+    (dig "examples.gnome")
   ;
 
   # Escape the name so `nix-env` will show it.
