@@ -10,10 +10,10 @@ in
   imports = [
     ./gnome.nix
     ../common-configuration.nix
-    #./buffyboard.nix
-    #./hkdm.nix
-    #./ttyescape.nix
-    #./Cargo.lock
+    ./buffyboard.nix
+    ./hkdm.nix
+    ./ttyescape.nix
+    ./Cargo.lock
   ];
 
   config = lib.mkMerge [
