@@ -12,7 +12,7 @@ let
         systemd     # journalctl
         glibc       # iconv
         util-linux  # lsblk
-        input-utils # lsinput
+       # input-utils # lsinput
       ])}:$PATH";
     };
   };
