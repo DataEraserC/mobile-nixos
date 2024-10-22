@@ -118,7 +118,7 @@ in
   };
 
   services.getty.autologinUser = "nixos";
-
+   { allowUnfree = true; }
   # The LVGUI interface can be used with volume keys for selecting
   # and power to activate an option.
   # Without this, logind just powers off :).
