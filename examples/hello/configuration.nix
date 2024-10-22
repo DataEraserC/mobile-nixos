@@ -44,7 +44,7 @@ in
 
   environment.systemPackages = with pkgs; [
     hello-gui
-    input-utils
+    #input-utils
   ];
 
   # Make the system rootfs different enough that mixing stage-1 and stage-2
