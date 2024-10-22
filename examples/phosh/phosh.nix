@@ -20,18 +20,18 @@
   programs.calls.enable = true;
 
   environment.systemPackages = with pkgs; [
-    firefox
-    vim
-    git
-    wget
-    mpv
-    podman
-    nmon
-    htop
-    cmus
-    fastfetch
-    go-musicfox
-    neofetch
+    #firefox
+    #vim
+    #git
+    #wget
+    #mpv
+    #podman
+    #nmon
+    #htop
+    #cmus
+    #fastfetch
+    #go-musicfox
+    #neofetch
     kgx                 # Terminal
   ];
 
