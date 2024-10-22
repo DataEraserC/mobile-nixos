@@ -20,6 +20,8 @@ in
       # Forcibly set a password on users...
       # Note that a numeric password is currently required to unlock a session
       # with the plasma mobile shell :/
+      allowUnfree = true; 
+      system.stateVersion = "24.11";
       users.users.${defaultUserName} = {
         isNormalUser = true;
         # Numeric pin makes it **possible** to input on the lockscreen.
@@ -37,8 +39,8 @@ in
 
       users.users.root.password  = "nixos";
       # mobile.quirks.qualcomm.sdm845-modem.enable = true;
-      system.stateVersion = "24.11";
-      allowUnfree = true; 
+      
+      
       nix.settings.experimental-features = [ "nix-command" "flakes" ];
       # Automatically login as defaultUserName.
       services.xserver.displayManager.autoLogin = {
