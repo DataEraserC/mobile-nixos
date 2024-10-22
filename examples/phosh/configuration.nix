@@ -9,7 +9,7 @@ in
 {
   imports = [
     ./phosh.nix
-    ./bluetooth.nix
+    #./bluetooth.nix
     ../common-configuration.nix
   ];
 
@@ -43,10 +43,10 @@ in
       
       nix.settings.experimental-features = [ "nix-command" "flakes" ];
       # Automatically login as defaultUserName.
-      services.xserver.displayManager.autoLogin = {
+      services.displayManager.autoLogin = {
         user = defaultUserName;
       };
-      services.xserver.desktopManager.phosh = {
+      services.desktopManager.phosh = {
         user = defaultUserName;
       };
     }
