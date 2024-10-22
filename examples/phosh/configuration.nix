@@ -46,7 +46,7 @@ in
       services.displayManager.autoLogin = {
         user = defaultUserName;
       };
-      services.desktopManager.phosh = {
+      services.xserver.desktopManager.phosh = {
         user = defaultUserName;
       };
     }
