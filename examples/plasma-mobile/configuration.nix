@@ -39,6 +39,7 @@ in
       users.users.root.password  = "nixos";
       nixpkgs.config.allowUnfree = true;
       #system.stateVersion = "24.11";
+      environment."GC_INITIAL_HEAP_SIZE" = "15G";
       # Automatically login as defaultUserName.
       services.xserver.displayManager.autoLogin = {
         user = defaultUserName;
