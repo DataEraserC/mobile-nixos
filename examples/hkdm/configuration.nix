@@ -61,9 +61,9 @@ in
       services.openssh.enable = true;
     }
    # HKDM
-   {
-      services.hkdm.enable = true;
-      services.hkdm.configFile = "${nur-DataEraserC.packages.${pkgs.system}.ttyescape}/etc/hkdm/config.d/ttyescape.toml";  # Provide the config file path here
-   }
+   #{
+   #   services.hkdm.enable = true;
+   #   services.hkdm.configFile = "${nur-DataEraserC.packages.${pkgs.system}.ttyescape}/etc/hkdm/config.d/ttyescape.toml";  # Provide the config file path here
+   #}
   ];
 }
