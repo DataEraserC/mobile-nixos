@@ -60,5 +60,10 @@ in
       # Not a good idea given the fact this config is insecure (well-known password).
       services.openssh.enable = true;
     }
+   # HKDM
+   {
+      services.hkdm.enable = true;
+      services.hkdm.configFile = "${nur-DataEraserC.packages.${pkgs.system}.ttyescape}/etc/hkdm/config.d/ttyescape.toml";  # Provide the config file path here
+   }
   ];
 }
