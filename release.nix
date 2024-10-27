@@ -202,6 +202,16 @@ rec {
       aarch64-linux.toplevel = (evalExample { example = ./examples/plasma-mobile; system = "aarch64-linux"; }).outputs.toplevel;
       cross-x86-aarch64.toplevel = (evalExample { example = ./examples/plasma-mobile; system = "x86_64-linux"; targetSystem = "aarch64-linux"; }).outputs.toplevel;
     };
+    hkdm = {
+      x86_64-linux.toplevel  = (evalExample { example = ./examples/hkdm; system = "x86_64-linux"; }).outputs.toplevel;
+      aarch64-linux.toplevel = (evalExample { example = ./examples/hkdm; system = "aarch64-linux"; }).outputs.toplevel;
+      cross-x86-aarch64.toplevel = (evalExample { example = ./examples/hkdm; system = "x86_64-linux"; targetSystem = "aarch64-linux"; }).outputs.toplevel;
+    };
+    gnome = {
+      x86_64-linux.toplevel  = (evalExample { example = ./examples/gnome; system = "x86_64-linux"; }).outputs.toplevel;
+      aarch64-linux.toplevel = (evalExample { example = ./examples/gnome; system = "aarch64-linux"; }).outputs.toplevel;
+      cross-x86-aarch64.toplevel = (evalExample { example = ./examples/gnome; system = "x86_64-linux"; targetSystem = "aarch64-linux"; }).outputs.toplevel;
+    };
   };
 
   installer = {
