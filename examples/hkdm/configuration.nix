@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, nur-DataEraserC, ... }:
 
 let
   inherit (lib) mkForce;
